@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+/*
+  Emmanuel CliniX brand system (derived from the logo).
+  Tailwind v4 is CSS-first: tokens declared here generate utilities
+  (e.g. `bg-navy`, `text-teal`, `font-heading`). Audience is 40–60,
+  so the type scale runs large and the palette stays calm/clinical.
+*/
+@theme {
+  /* Brand */
+  --color-navy: #0f2e3d; /* primary / dark text */
+  --color-teal: #22b5cc; /* bright accent — the X stroke, used SPARINGLY */
+  --color-blue: #1c7fa6; /* secondary accent */
+
+  /* Tints for backgrounds & borders */
+  --color-navy-50: #f2f6f7;
+  --color-navy-100: #e2eaec;
+  --color-teal-50: #ecfafd;
+  --color-teal-100: #d2f1f7;
+  --color-teal-700: #0e7d90; /* AA-contrast teal for text on light backgrounds */
+
+  /* Neutrals */
+  --color-ink: #0f2e3d;
+  --color-muted: #6b6560; /* warm gray — premium, less clinical than a cool gray */
+  --color-line: #e6e2d9; /* warm hairline to match the bone surfaces */
+  --color-cloud: #f7f9fa; /* legacy cool tint — kept for existing (non-home) pages */
+
+  /* Warm premium neutrals (design evolution) — the "longevity clinic" base.
+     Used on the homepage to alternate with white for calm banding. */
+  --color-bone: #f7f5f0; /* warm page/section background */
+  --color-sand: #efeae1; /* deeper warm panel / card well / divider */
+
+  /* Fonts (wired from next/font in layout.tsx) */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-manrope), var(--font-inter), ui-sans-serif, sans-serif;
+  /* Modern serif for display headings — premium + mature, still contemporary. */
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+
+  /* Slightly larger type scale for readability */
+  --text-base: 1.0625rem; /* 17px */
+  --text-base--line-height: 1.7;
+  --text-lg: 1.1875rem;
+  --text-lg--line-height: 1.7;
+  /* Fluid display step for hero / big section headings — floor kept small so it
+     fits a 360px viewport without clipping. */
+  --text-display: clamp(1.95rem, 6vw, 4rem);
+  --text-display--line-height: 1.1;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: var(--color-navy);
+
+  /* Quiz-only design system (client ask 2026-08-23: pixel-match the live
+     WordPress site's quiz — emmanuel-clinix.ro/chestionare/*, values pulled
+     via getComputedStyle from its actual DOM). Scoped to Quiz.tsx /
+     ScoredQuiz.tsx / /chestionare pages only — the brand navy/teal/blue
+     tokens above are untouched everywhere else on the site. Plain :root
+     (not @theme) on purpose: Tailwind v4's @theme silently drops entries
+     whose value references a sibling custom property (confirmed by
+     inspecting the compiled CSS — these don't need utility-class generation
+     anyway, only `var()` in arbitrary values, so plain :root is correct). */
+  --color-quiz-bg: #fffdf9;
+  --color-quiz-navy: #093545;
+  --color-quiz-teal: #2d7a7a;
+  --color-quiz-gradient: linear-gradient(135deg, var(--color-quiz-navy), var(--color-quiz-teal));
+  /* Secondary/back-button + kicker-badge accent (their "Înapoi" button and
+     the small pill badges use this brown, NOT the primary navy→teal gradient). */
+  --color-quiz-accent: #8a6046;
+  --color-quiz-accent-dark: #6f4c37;
+  --color-quiz-accent-soft: #f5efe8;
+  --color-quiz-tan: #c68a65; /* kicker/badge pill border+tint */
+  --font-quiz-serif: var(--font-playfair), Georgia, serif; /* question headings */
+  --font-quiz-heading: var(--font-montserrat), sans-serif; /* big display titles */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip; /* never let a stray wide element create a sideways scroll */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  /* Serif display headings want normal tracking (the -0.02em above suits the
+     Manrope sans headings, not the Fraunces serif). */
+  .font-display {
+    letter-spacing: normal;
+  }
+}
+
+/* Quiz step transition (funnel /evaluare) — fade + slide, matches the mock. */
+@keyframes quizFade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-quiz-fade {
+  animation: quizFade 0.35s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-quiz-fade {
+    animation: none;
+  }
+}

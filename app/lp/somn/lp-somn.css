@@ -1,0 +1,428 @@
+/* Auto-scoped from the client's standalone LP (new_modifications_part4/index.html).
+   Every selector is prefixed with .lp-somn so his generic class names and bare
+   element rules cannot affect the rest of the site. Regenerate via
+   scratchpad/scope-css.mjs. */
+
+.lp-somn{ --navy:#0A2E3B;
+    --navy-2:#0D3A49;
+    --navy-deep:#071F29;
+    --bg:#FFFFFF;
+    --bg-alt:#F4F7F8;
+    --ink:#0F1B22;
+    --muted:#5B6672;
+    --muted-light:#87919B;
+    --teal:#0EA5BE;
+    --teal-deep:#0B7F92;
+    --teal-bright:#2FE0F0;
+    --blue-accent:#1C6FB5;
+    --line:#E3E8EA;
+    --radius:16px; }
+.lp-somn *{ box-sizing:border-box; margin:0; padding:0; }
+.lp-somn{ scroll-behavior:smooth; }
+.lp-somn{ font-family:var(--font-inter),'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden; }
+.lp-somn h1, .lp-somn h2, .lp-somn h3, .lp-somn h4{ font-family:var(--font-inter),'Inter',sans-serif;
+    font-weight:800;
+    line-height:1.12;
+    letter-spacing:-0.02em; }
+.lp-somn a{ color:inherit; text-decoration:none; }
+.lp-somn img{ max-width:100%; display:block; }
+.lp-somn .wrap{ max-width:1080px; margin:0 auto; padding:0 24px; }
+.lp-somn .wrap-narrow{ max-width:720px; margin:0 auto; padding:0 24px; }
+.lp-somn section{ position:relative; }
+.lp-somn ::selection{ background:var(--teal-bright); color:var(--navy-deep); }
+.lp-somn .reveal{ opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease; }
+.lp-somn .reveal.in{ opacity:1; transform:translateY(0); }
+/* ---------- Buttons ---------- */
+.lp-somn .btn{ display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    padding:16px 30px;
+    border-radius:10px;
+    font-weight:700;
+    font-size:15.5px;
+    cursor:pointer;
+    border:none;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+    white-space:nowrap; }
+.lp-somn .btn-primary{ background:linear-gradient(135deg,var(--teal-bright),var(--teal));
+    color:#fff;
+    box-shadow:0 8px 20px -8px rgba(14,165,190,0.45); }
+.lp-somn .btn-primary:hover{ transform:translateY(-1px); box-shadow:0 10px 24px -6px rgba(14,165,190,0.55); }
+.lp-somn .btn-outline{ background:transparent;
+    border:1.5px solid rgba(255,255,255,0.3);
+    color:#fff; }
+.lp-somn .btn-outline:hover{ background:rgba(255,255,255,0.08); }
+.lp-somn .btn-outline-dark{ background:transparent;
+    border:1.5px solid var(--line);
+    color:var(--ink); }
+.lp-somn .btn-outline-dark:hover{ border-color:var(--teal); }
+.lp-somn .btn-block{ width:100%; }
+.lp-somn .btn-sub{ display:block; text-align:center; margin-top:12px;
+    font-size:13px; color:var(--muted-light); }
+/* ---------- Logo ---------- */
+.lp-somn .logo-mark{ flex-shrink:0; }
+.lp-somn .logo{ display:flex; align-items:center; gap:10px; }
+.lp-somn .logo-text{ font-weight:800; font-size:15px; letter-spacing:.03em; color:var(--navy);
+    text-transform:uppercase; }
+.lp-somn .foot-logo-lockup{ display:flex; align-items:center; gap:14px; }
+.lp-somn .foot-logo-text{ line-height:1.1; }
+.lp-somn .foot-logo-text .l1{ font-weight:800; font-size:19px; letter-spacing:.02em; color:#fff; text-transform:uppercase; display:block; }
+.lp-somn .foot-logo-text .l2{ font-weight:800; font-size:19px; letter-spacing:.02em; color:#fff; text-transform:uppercase; display:block; }
+.lp-somn .foot-logo-text .tag{ font-size:11px; letter-spacing:.12em; color:#87919B; margin-top:6px; text-transform:uppercase; }
+/* ---------- Nav ---------- */
+.lp-somn header{ position:sticky; top:0; z-index:100;
+    background:rgba(255,255,255,0.9);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line); }
+.lp-somn .nav{ display:flex; align-items:center; justify-content:space-between;
+    padding:14px 24px; }
+.lp-somn .nav-right{ display:flex; align-items:center; gap:16px; }
+.lp-somn .nav-phone{ display:flex; align-items:center; gap:6px; font-size:13.5px; font-weight:700; color:var(--navy); }
+.lp-somn .nav-phone:hover{ color:var(--teal-deep); }
+.lp-somn .nav-cta{ padding:11px 22px; font-size:13.5px;
+    background:var(--navy); color:#fff; box-shadow:none; }
+.lp-somn .nav-cta:hover{ background:var(--navy-2); transform:none; box-shadow:none; }
+/* ---------- Hero ---------- */
+.lp-somn .hero{ background:radial-gradient(120% 90% at 50% -10%, #123B4A 0%, var(--navy) 55%, var(--navy-deep) 100%);
+    color:#fff;
+    padding:56px 0 64px;
+    text-align:center; }
+.lp-somn .hero h1{ font-size:clamp(30px,4.6vw,50px);
+    max-width:760px;
+    margin:0 auto 18px; }
+.lp-somn .hero h1 em{ color:var(--teal-bright); font-style:normal; }
+.lp-somn .hero .sub{ max-width:520px; margin:0 auto 34px;
+    font-size:17.5px; color:#B8C4C9; font-weight:400; }
+.lp-somn .vsl{ max-width:760px; margin:0 auto 16px;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 24px 60px -20px rgba(0,0,0,0.5);
+    border:1px solid rgba(255,255,255,0.08); }
+.lp-somn .vsl-frame{ position:relative;
+    aspect-ratio:16/9;
+    background:
+      radial-gradient(70% 90% at 50% 40%, rgba(47,224,240,0.16), transparent 65%),
+      linear-gradient(160deg,#123243,var(--navy-deep));
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer; }
+.lp-somn .play-btn{ position:relative; z-index:2;
+    width:76px; height:76px; border-radius:50%;
+    background:rgba(255,255,255,0.12);
+    border:1.5px solid rgba(255,255,255,0.4);
+    display:flex; align-items:center; justify-content:center;
+    backdrop-filter:blur(6px);
+    transition:transform .22s ease, background .22s ease; }
+.lp-somn .vsl-frame:hover .play-btn{ transform:scale(1.06); background:rgba(255,255,255,0.2); }
+.lp-somn .play-btn svg{ width:24px; height:24px; margin-left:4px; }
+.lp-somn .vsl-caption{ position:absolute; left:20px; bottom:16px; z-index:2;
+    text-align:left; color:#fff; }
+.lp-somn .vsl-caption .tag{ font-size:11.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--teal-bright); margin-bottom:3px; }
+.lp-somn .vsl-caption .len{ font-size:12.5px; color:#9BA8AD; }
+.lp-somn .vsl-note{ max-width:480px; margin:18px auto 32px;
+    font-size:14px; line-height:1.6; color:#8E9BA1; }
+.lp-somn .hero-stats{ display:flex; flex-wrap:wrap; justify-content:center; gap:0;
+    margin-top:44px; padding-top:28px;
+    border-top:1px solid rgba(255,255,255,0.08);
+    max-width:560px; margin-left:auto; margin-right:auto; }
+.lp-somn .stat{ text-align:center; flex:1; min-width:150px; }
+.lp-somn .stat .num{ font-size:24px; color:#fff; font-weight:800; letter-spacing:-0.01em; }
+.lp-somn .stat .label{ font-size:12px; color:#8E9BA1; margin-top:3px; }
+/* ---------- Section headers ---------- */
+.lp-somn .sec-head{ max-width:600px; margin:0 auto 40px; }
+.lp-somn .sec-head h2{ font-size:clamp(24px,3.2vw,34px); margin-bottom:0; }
+.lp-somn .kicker{ display:block; font-size:12px; font-weight:700; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--teal); margin-bottom:10px; }
+/* ---------- Generic light section ---------- */
+.lp-somn .section-light{ padding:80px 0; }
+.lp-somn .section-alt{ background:var(--bg-alt); }
+.lp-somn .section-divider{ border-top:1px solid var(--line); }
+/* ---------- Ce sa te astepti (steps) ---------- */
+.lp-somn .steps4{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+.lp-somn .step-card{ padding:24px 20px; border-radius:var(--radius); background:#fff;
+    border:1px solid var(--line); }
+.lp-somn .step-num{ font-size:13px; font-weight:800; color:var(--teal); margin-bottom:12px;
+    letter-spacing:.02em; }
+.lp-somn .step-card h3{ font-size:16px; margin-bottom:6px; font-weight:700; }
+.lp-somn .step-card p{ color:var(--muted); font-size:13.5px; }
+/* ---------- Beneficii (checklist) ---------- */
+.lp-somn .benefits-grid{ display:grid; grid-template-columns:1fr 1fr; gap:14px;
+    max-width:640px; margin:0 auto; }
+.lp-somn .benefit-item{ display:flex; align-items:center; gap:12px;
+    background:#fff; border:1px solid var(--line); border-radius:12px;
+    padding:16px 18px; font-size:15px; font-weight:600; }
+.lp-somn .benefit-check{ flex-shrink:0; width:22px; height:22px; border-radius:50%;
+    background:rgba(14,165,190,0.1); color:var(--teal-deep);
+    display:flex; align-items:center; justify-content:center; font-size:12px; }
+/* ---------- Pentru cine NU e ---------- */
+.lp-somn .not-for-list{ list-style:none; display:flex; flex-direction:column; gap:12px; }
+.lp-somn .not-for-list li{ position:relative; padding:14px 18px 14px 46px;
+    background:#fff; border:1px solid var(--line); border-radius:12px;
+    font-size:14.5px; color:var(--ink); line-height:1.5; }
+.lp-somn .not-for-list li::before{ content:"✕"; position:absolute; left:16px; top:14px;
+    width:20px; height:20px; border-radius:50%; background:rgba(220,38,38,0.1); color:#DC2626;
+    font-size:11px; font-weight:800; display:flex; align-items:center; justify-content:center; }
+/* ---------- Carousel (infinite, flat 2D, spaced) ---------- */
+.lp-somn .carousel2d{ position:relative; padding:0 54px; margin:0 -24px 40px; }
+.lp-somn .carousel2d:last-of-type{ margin-bottom:0; }
+.lp-somn .car2d-viewport{ position:relative; overflow:hidden;
+    touch-action:pan-y; user-select:none; }
+.lp-somn .car2d-viewport-video{ height:206px; }
+.lp-somn .car2d-viewport-review{ height:250px; }
+.lp-somn .car2d-track{ display:flex; align-items:center; gap:24px;
+    transition:transform .5s cubic-bezier(.65,0,.35,1);
+    will-change:transform; }
+.lp-somn .car2d-track.notransition{ transition:none; }
+.lp-somn .car2d-slide{ flex-shrink:0;
+    transition:opacity .4s ease; }
+.lp-somn .car-btn{ position:absolute; top:50%; transform:translateY(-50%); z-index:20;
+    width:42px; height:42px; border-radius:50%;
+    background:#fff; border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center; cursor:pointer;
+    box-shadow:0 6px 16px -6px rgba(15,27,34,0.18);
+    transition:border-color .18s ease; }
+.lp-somn .car-btn:hover{ border-color:var(--teal); }
+.lp-somn .car-btn svg{ width:16px; height:16px; }
+.lp-somn .car-prev{ left:0; }
+.lp-somn .car-next{ right:0; }
+.lp-somn .car-dots{ display:flex; justify-content:center; align-items:center; gap:8px; margin-top:20px; }
+.lp-somn .car-dot{ width:8px; height:8px; border-radius:50%; background:var(--line); border:none; padding:0; cursor:pointer;
+    transition:background .2s ease, transform .2s ease; }
+.lp-somn .car-dot.active{ background:var(--teal); transform:scale(1.35); }
+.lp-somn .t-card{ background:#fff; border-radius:var(--radius); border:1px solid var(--line);
+    padding:22px; width:320px; }
+.lp-somn .stars{ color:var(--teal); font-size:13px; margin-bottom:12px; letter-spacing:2px; }
+.lp-somn .t-card p.quote{ font-size:14.5px; color:var(--ink); margin-bottom:18px; min-height:60px; }
+.lp-somn .t-person{ display:flex; align-items:center; gap:10px; }
+.lp-somn .avatar{ width:38px; height:38px; border-radius:50%;
+    background:linear-gradient(135deg,var(--teal-bright),var(--blue-accent));
+    color:#fff; font-weight:700; font-size:13px;
+    display:flex; align-items:center; justify-content:center; }
+.lp-somn .t-person .name{ font-weight:700; font-size:13.5px; }
+.lp-somn .t-person .role{ font-size:12px; color:var(--muted-light); }
+.lp-somn .v-card{ border-radius:var(--radius); overflow:hidden; border:1px solid var(--line);
+    background:var(--navy-deep); cursor:pointer;
+    width:340px; }
+.lp-somn .v-thumb{ position:relative; aspect-ratio:16/9;
+    display:flex; align-items:center; justify-content:center; }
+.lp-somn .v-thumb.g1{ background:radial-gradient(80% 80% at 30% 20%,rgba(47,224,240,.28),transparent 60%),linear-gradient(160deg,#0F3241,var(--navy-deep)); }
+.lp-somn .v-thumb.g2{ background:radial-gradient(80% 80% at 70% 30%,rgba(28,111,181,.32),transparent 60%),linear-gradient(160deg,#0F3241,var(--navy-deep)); }
+.lp-somn .v-thumb.g3{ background:radial-gradient(80% 80% at 50% 70%,rgba(47,224,240,.22),transparent 60%),linear-gradient(160deg,#0F3241,var(--navy-deep)); }
+.lp-somn .v-play{ width:46px; height:46px; border-radius:50%;
+    background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,.35);
+    display:flex; align-items:center; justify-content:center; backdrop-filter:blur(6px); }
+.lp-somn .v-play svg{ width:15px; height:15px; margin-left:2px; }
+.lp-somn .v-meta{ position:absolute; left:14px; bottom:12px; color:#fff; }
+.lp-somn .v-meta .name{ font-weight:700; font-size:13px; }
+.lp-somn .v-meta .role{ font-size:11px; color:#B8C4C9; }
+.lp-somn .v-len{ position:absolute; top:12px; right:12px; font-size:10.5px; color:#fff; background:rgba(0,0,0,0.35); padding:3px 8px; border-radius:20px; }
+@media (max-width:640px){
+  .lp-somn .carousel2d{ padding:0 44px; }
+  .lp-somn .t-card{ width:250px; }
+  .lp-somn .v-card{ width:260px; }
+  .lp-somn .car2d-viewport-video{ height:170px; }
+  .lp-somn .car2d-viewport-review{ height:280px; }
+}
+/* ---------- FAQ ---------- */
+.lp-somn .acc-wrap{ max-width:680px; margin:0 auto; }
+.lp-somn .acc-item{ border-bottom:1px solid var(--line); }
+.lp-somn .acc-q{ display:flex; align-items:center; justify-content:space-between; gap:16px;
+    padding:20px 4px; cursor:pointer; font-weight:700; font-size:15.5px; }
+.lp-somn .acc-icon{ flex-shrink:0; width:22px; height:22px; border-radius:50%; border:1.5px solid var(--line);
+    display:flex; align-items:center; justify-content:center; transition:transform .25s ease;
+    font-size:13px; color:var(--muted); }
+.lp-somn .acc-item.open .acc-icon{ transform:rotate(45deg); background:var(--navy); color:#fff; border-color:var(--navy); }
+.lp-somn .acc-a{ max-height:0; overflow:hidden; transition:max-height .3s ease;
+    font-size:14.5px; color:var(--muted); padding:0 4px; }
+.lp-somn .acc-a-inner{ padding-bottom:18px; max-width:560px; }
+.lp-somn .acc-item.open .acc-a{ max-height:200px; }
+.lp-somn .mid-cta{ text-align:center; margin-top:44px; }
+/* ---------- Apply / Form ---------- */
+.lp-somn .apply{ padding:80px 0; background:var(--bg-alt); }
+.lp-somn .apply-box{ max-width:520px; margin:0 auto; background:#fff; border-radius:20px;
+    border:1px solid var(--line); padding:36px; }
+.lp-somn .apply-box h2{ font-size:22px; margin-bottom:6px; text-align:center; }
+.lp-somn .apply-box .apply-sub{ text-align:center; color:var(--muted); font-size:14px; margin-bottom:26px; }
+.lp-somn .field{ margin-bottom:14px; }
+.lp-somn .field label{ display:block; font-size:13px; font-weight:600; margin-bottom:6px; }
+.lp-somn .field input, .lp-somn .field select, .lp-somn .field textarea{ width:100%; padding:12px 14px; border-radius:9px; border:1px solid var(--line);
+    font-family:var(--font-inter),'Inter'; font-size:14.5px; background:var(--bg-alt); color:var(--ink); }
+.lp-somn .field textarea{ min-height:78px; resize:vertical; line-height:1.5; }
+.lp-somn .field input:focus, .lp-somn .field select:focus, .lp-somn .field textarea:focus{ outline:2px solid var(--teal-bright); border-color:var(--teal); }
+.lp-somn .apply-note{ font-size:12px; color:var(--muted-light); text-align:center; margin-top:12px; }
+.lp-somn .price-note{ font-size:13px; line-height:1.5; color:var(--muted); background:var(--bg-alt);
+    border:1px solid var(--line); border-radius:10px; padding:12px 14px; margin:18px 0 14px; }
+.lp-somn .consent-check{ display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--ink);
+    cursor:pointer; margin-bottom:6px; }
+.lp-somn .consent-check input{ margin-top:2px; flex-shrink:0; width:16px; height:16px; accent-color:var(--teal); }
+.lp-somn .apply-microcopy{ font-size:12px; line-height:1.5; color:var(--muted-light); text-align:center; margin-top:14px; }
+/* ---------- Footer ---------- */
+.lp-somn footer{ background:var(--navy-deep); color:#8791A0; padding:48px 0 26px; }
+.lp-somn .foot-grid{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:30px; padding-bottom:30px; border-bottom:1px solid rgba(255,255,255,.08); }
+.lp-somn .foot-links{ display:flex; gap:40px; flex-wrap:wrap; }
+.lp-somn .foot-col h4{ color:#fff; font-size:12px; margin-bottom:12px; letter-spacing:.04em; }
+.lp-somn .foot-col a{ display:block; font-size:13.5px; margin-bottom:8px; color:#8791A0; }
+.lp-somn .foot-col a:hover{ color:#fff; }
+.lp-somn .disclaimer{ font-size:11.5px; line-height:1.7; color:#546069; padding-top:22px; max-width:820px; }
+.lp-somn .foot-bottom{ display:flex; justify-content:space-between; margin-top:18px; font-size:12px; flex-wrap:wrap; gap:10px; }
+/* ---------- Sticky mobile CTA ---------- */
+.lp-somn .sticky-cta{ position:fixed; bottom:0; left:0; right:0; z-index:200;
+    background:#fff; border-top:1px solid var(--line);
+    padding:12px 16px; display:none; }
+@media (max-width:900px){
+  .lp-somn .steps4, .lp-somn .testi-grid, .lp-somn .video-grid{ grid-template-columns:1fr; }
+  .lp-somn .benefits-grid{ grid-template-columns:1fr; }
+  .lp-somn .nav-cta{ display:none; }
+  .lp-somn .sticky-cta{ display:block; }
+  .lp-somn{ padding-bottom:74px; }
+  .lp-somn .hero{ padding:36px 0 44px; }
+  .lp-somn .foot-grid{ flex-direction:column; }
+}
+
+/* ---------- Added for the React port ---------- */
+.lp-somn .field-err{ color:#DC2626; font-size:12px; margin-top:6px; }
+.lp-somn .lp-perso{
+  background:linear-gradient(135deg,var(--teal-bright),var(--teal));
+  color:var(--navy-deep);
+}
+.lp-somn .lp-perso .wrap{ padding-top:22px; padding-bottom:22px; }
+.lp-somn .lp-perso .perso-kicker{
+  font-size:12px; font-weight:800; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--navy-deep); opacity:.7; margin-bottom:8px;
+}
+.lp-somn .lp-perso h2{ font-size:clamp(20px,2.6vw,26px); color:var(--navy-deep); }
+.lp-somn .lp-perso p{ margin-top:8px; font-size:15px; color:var(--navy-deep); max-width:680px; }
+
+/* ---------- Mobile optimization pass (client ask: premium, not crowded) ----------
+   Appended after the client's own breakpoints so these win. Only spacing/type/
+   sizing — no structural change (the carousel JS measures widths at runtime, so
+   narrower cards + tighter gutters self-correct). */
+@media (max-width:640px){
+  /* Airier but shorter sections — less endless scroll, still generous */
+  .lp-somn .section-light{ padding:54px 0; }
+  .lp-somn .apply{ padding:54px 0; }
+  .lp-somn .sec-head{ margin-bottom:28px; }
+
+  /* Hero */
+  .lp-somn .hero{ padding:30px 0 40px; }
+  .lp-somn .hero .sub{ font-size:16px; margin-bottom:26px; }
+  .lp-somn .vsl-note{ margin:16px auto 26px; }
+  .lp-somn .hero-stats{ margin-top:30px; padding-top:22px; gap:6px; }
+  .lp-somn .stat{ min-width:96px; }
+  .lp-somn .stat .num{ font-size:21px; }
+
+  /* Carousels — narrower gutters, smaller arrows, taller review box so long
+     quotes don't clip inside the fixed-height viewport */
+  .lp-somn .carousel2d{ padding:0 30px; }
+  .lp-somn .car2d-track{ gap:16px; }
+  .lp-somn .car-btn{ width:36px; height:36px; }
+  .lp-somn .car2d-viewport-review{ height:320px; }
+  .lp-somn .car2d-viewport-video{ height:172px; }
+  .lp-somn .t-card{ width:min(80vw,300px); }
+  .lp-somn .v-card{ width:min(82vw,300px); }
+
+  /* Benefits + buttons a touch tighter */
+  .lp-somn .benefit-item{ padding:14px 16px; font-size:14.5px; }
+  .lp-somn .btn{ padding:15px 24px; }
+
+  /* Apply box: less padding on small screens; 16px inputs stop iOS zoom-on-focus */
+  .lp-somn .apply-box{ padding:24px 20px; border-radius:16px; }
+  .lp-somn .field input, .lp-somn .field select, .lp-somn .field textarea{ font-size:16px; padding:13px 14px; }
+
+  /* Footer */
+  .lp-somn .foot-links{ gap:26px; }
+}
+
+@media (max-width:400px){
+  .lp-somn .wrap{ padding:0 18px; }
+  .lp-somn .hero h1{ font-size:27px; }
+  .lp-somn .carousel2d{ padding:0 22px; }
+  .lp-somn .stat{ min-width:84px; }
+  .lp-somn .nav-phone span{ display:none; }
+}
+
+/* ---------- Hero facts row (checkmark list, replaces numeric hero-stats) ---------- */
+.lp-somn .hero-facts{ display:flex; flex-wrap:wrap; justify-content:center; gap:10px 30px;
+    margin-top:44px; padding-top:28px; border-top:1px solid rgba(255,255,255,0.08);
+    max-width:640px; margin-left:auto; margin-right:auto; }
+.lp-somn .hero-fact{ display:flex; align-items:center; gap:9px; color:#B8C4C9; font-size:13.5px; font-weight:500; }
+.lp-somn .hero-fact i{ width:18px; height:18px; border-radius:50%; background:rgba(47,224,240,0.16); color:var(--teal-bright);
+    display:flex; align-items:center; justify-content:center; font-style:normal; font-size:10px; font-weight:800; flex-shrink:0; }
+
+/* ---------- Qualification (E pentru tine / Nu aplica) two-column ---------- */
+.lp-somn .qual-grid{ display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:8px; }
+.lp-somn .qual-col h3{ font-size:16px; margin-bottom:16px; }
+.lp-somn .fit-list{ list-style:none; display:flex; flex-direction:column; gap:12px; }
+.lp-somn .fit-list li{ position:relative; padding:14px 18px 14px 46px;
+    background:#fff; border:1px solid var(--line); border-radius:12px;
+    font-size:14.5px; color:var(--ink); line-height:1.5; }
+.lp-somn .fit-list li::before{ content:"✓"; position:absolute; left:16px; top:14px;
+    width:20px; height:20px; border-radius:50%; background:rgba(14,165,190,0.12); color:var(--teal-deep);
+    font-size:11px; font-weight:800; display:flex; align-items:center; justify-content:center; }
+.lp-somn .qual-note{ margin-top:24px; text-align:center; font-size:14.5px; color:var(--muted); }
+
+/* ---------- Price stack ---------- */
+.lp-somn .price-stack{ margin-top:22px; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+.lp-somn .price-row{ display:flex; align-items:stretch; }
+.lp-somn .price-cell{ flex:1; text-align:center; padding:20px 14px; border-right:1px solid var(--line); background:var(--bg-alt); }
+.lp-somn .price-cell:last-child{ border-right:none; }
+.lp-somn .price-cell .lbl{ display:block; font-size:11.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin-bottom:6px; }
+.lp-somn .price-cell .num{ font-size:22px; font-weight:800; color:var(--ink); letter-spacing:-.02em; }
+
+/* ---------- Promise band (dark trust section) ---------- */
+.lp-somn .promise{ background:radial-gradient(120% 90% at 50% -10%, #123B4A 0%, var(--navy) 55%, var(--navy-deep) 100%);
+    color:#B8C4C9; padding:80px 0; }
+.lp-somn .promise .sec-head h2{ color:#fff; }
+.lp-somn .promise-row{ max-width:780px; margin:0 auto 16px; display:flex; gap:20px; align-items:flex-start;
+    border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:26px 28px;
+    background:rgba(47,224,240,0.06); }
+.lp-somn .promise-row:last-of-type{ margin-bottom:0; }
+.lp-somn .promise-icon{ flex-shrink:0; width:38px; height:38px; border-radius:50%; background:rgba(47,224,240,0.14);
+    color:var(--teal-bright); display:flex; align-items:center; justify-content:center; font-size:16px; }
+.lp-somn .promise-row p{ margin:0; color:#B8C4C9; }
+.lp-somn .promise-row b{ color:#fff; }
+
+@media (max-width:900px){
+  .lp-somn .qual-grid{ grid-template-columns:1fr; }
+}
+@media (max-width:640px){
+  .lp-somn .hero-facts{ flex-direction:column; align-items:flex-start; max-width:280px; gap:10px; margin-top:30px; padding-top:22px; }
+  .lp-somn .promise{ padding:54px 0; }
+  .lp-somn .promise-row{ padding:20px 22px; gap:14px; }
+}
+
+/* ---------- Problema (symptom recognition cards) ---------- */
+.lp-somn .problem-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:48px; }
+.lp-somn .problem-card{ background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:26px 24px 30px; }
+.lp-somn .problem-card .tag{ display:block; font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--teal-deep); margin-bottom:12px; }
+.lp-somn .problem-card p{ color:var(--ink); font-size:15px; line-height:1.6; }
+.lp-somn .pull-quote{ max-width:660px; margin:44px auto 0; text-align:center; font-size:clamp(19px,2.6vw,25px);
+    font-weight:700; letter-spacing:-.02em; color:var(--ink); line-height:1.4; }
+
+/* ---------- Narrative (De ce nu a ținut / Cauza) ---------- */
+.lp-somn .narrative-first{ color:var(--ink); font-size:16.5px; font-weight:500; margin-bottom:1.1em; }
+.lp-somn .wrap-narrow p{ color:var(--muted); font-size:15.5px; line-height:1.65; margin-bottom:1.1em; }
+.lp-somn .narrative-highlight{ font-size:clamp(20px,3vw,27px); font-weight:800; letter-spacing:-.02em;
+    color:var(--teal-deep); line-height:1.25; margin:30px 0; }
+.lp-somn .wrap-narrow h2{ margin-top:12px; margin-bottom:26px; }
+
+/* ---------- Mecanismul (how the treatment works) ---------- */
+.lp-somn .mech-steps{ display:grid; gap:16px; }
+.lp-somn .mech-step{ display:grid; grid-template-columns:130px 1fr; gap:24px; background:#fff;
+    border:1px solid var(--line); border-radius:var(--radius); padding:26px 28px; }
+.lp-somn .mech-label{ font-size:12px; font-weight:800; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--teal); padding-top:2px; }
+.lp-somn .mech-step h3{ font-size:16px; margin-bottom:8px; font-weight:700; }
+.lp-somn .mech-step p{ color:var(--muted); font-size:14px; line-height:1.6; }
+.lp-somn .mech-note{ margin-top:20px; border:1px solid #CFEDF3; background:rgba(14,165,190,0.06);
+    border-radius:var(--radius); padding:22px 24px; color:var(--ink); font-size:14.5px; line-height:1.6; }
+
+@media (max-width:900px){
+  .lp-somn .problem-grid{ grid-template-columns:1fr; }
+  .lp-somn .mech-step{ grid-template-columns:1fr; gap:6px; }
+}
