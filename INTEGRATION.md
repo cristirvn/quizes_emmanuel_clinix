@@ -36,6 +36,7 @@ Nu folosi iframe: afectează analiza, partajarea linkurilor, accesibilitatea și
 | --- | --- | --- |
 | `GHL_WEBHOOK_URL` | Da, în producție | Webhook-ul GoHighLevel care primește lead-urile. Rămâne secret pe server. |
 | `NEXT_PUBLIC_SITE_URL` | Da | URL-ul public al aplicației; este folosit pentru canonical/SEO. |
+| `NEXT_PUBLIC_MAIN_SITE_URL` | Da, pentru subdomeniu | URL-ul site-ului WordPress. Păstrează funcționale linkurile de navigare către paginile care nu fac parte din acest pachet. |
 | `NEXT_PUBLIC_GA_ID` | Opțional | ID GA4. |
 | `NEXT_PUBLIC_GADS_ID` + `NEXT_PUBLIC_GADS_CONVERSION_LABEL` | Opțional | Conversii Google Ads. |
 | `NEXT_PUBLIC_CLARITY_ID` | Opțional | Microsoft Clarity. |
@@ -55,4 +56,3 @@ Aceasta reduce numerele și adresele de test, dar nu poate confirma că persoana
 2. Configurează și testează `GHL_WEBHOOK_URL` în mediul de producție.
 3. Rulează `npm run lint` și `npm run build`.
 4. Parcurge fiecare traseu din [ROUTES.md](ROUTES.md), inclusiv formularul și pagina de mulțumire pentru Somn B.
-
