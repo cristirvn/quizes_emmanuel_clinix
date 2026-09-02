@@ -223,7 +223,7 @@ export function LpApplyB() {
       <div className="field">
         <label htmlFor="succes">
           Ce rezultat ar trebui să-ți aducă acest serviciu ca să spui că a fost un succes?
-          <span className="hint">Fii cât mai concret. Ex: „să dorm 7 ore fără trezire".</span>
+          <span className="hint">Fii cât mai concret. Ex: „să dorm 7 ore fără trezire”.</span>
         </label>
         <textarea id="succes" name="succes" placeholder="Scrie aici..." required />
       </div>
