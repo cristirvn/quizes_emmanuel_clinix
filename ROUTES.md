@@ -44,6 +44,7 @@ Rezultatul fiecărui test este calculat în browser de `lib/scored-quiz.ts`; dat
 | `/lp/somn-b/aplicatie` | `app/lp/somn-b/aplicatie/page.tsx` | Formularul variantei Somn B |
 | `/lp/somn-b/multumim` | `app/lp/somn-b/multumim/page.tsx` | Confirmare după Somn B |
 | `/lp/somn/multumim` | `app/lp/somn/multumim/page.tsx` | Confirmare pentru Somn |
+| `/lp/emsella` | `app/lp/emsella/page.tsx` | Landing page separată EmSella; nu este legată de un chestionar. |
 
 `content/campaign-lps/` conține textele pentru landing page-urile BrainMap. `components/lp/` conține designul, formularele și comportamentele lor. CSS-ul specific se află lângă paginile Somn sau în `components/lp/lp-brainmap.css`.
 
@@ -53,4 +54,3 @@ Rezultatul fiecărui test este calculat în browser de `lib/scored-quiz.ts`; dat
 | --- | --- | --- |
 | `/politica-de-confidentialitate` | `app/politica-de-confidentialitate/page.tsx` | Link din formular; trebuie completată cu politica juridică reală. |
 | `/termeni-si-conditii` | `app/termeni-si-conditii/page.tsx` | Link din formular; trebuie completată cu termenii juridici reali. |
-
