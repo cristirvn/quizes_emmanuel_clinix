@@ -4,7 +4,7 @@ Pachetul independent pentru zona **Chestionare**: nouă chestionare, ecranul de 
 
 Designul și textele au fost păstrate din proiectul sursă. Acest proiect este o aplicație Next.js care se conectează la un site WordPress; nu este o temă sau un plugin WordPress.
 
-Înainte de publicare, începe cu **GHID-SCURT-INTEGRARE-CHestionare.docx** (ghidul Word de două pagini), apoi citește [INTEGRATION.md](INTEGRATION.md) și [ROUTES.md](ROUTES.md) pentru detalii tehnice.
+Înainte de publicare, citește [INTEGRATION.md](INTEGRATION.md) și [ROUTES.md](ROUTES.md).
 
 ## Pornire locală
 
@@ -30,3 +30,4 @@ Deschide `http://localhost:3000/chestionare`.
 - o adresă Gmail sau Yahoo plauzibilă (`gmail.com`, `yahoo.com`, `yahoo.ro`), care nu este un placeholder de tip test/demo/asdf.
 
 Verificarea se face atât în formular, cât și pe endpoint-ul serverului. Ea filtrează datele evident inventate; nu demonstrează proprietatea asupra numărului sau inboxului. Aceasta ar necesita verificare prin SMS sau email, care nu face parte din acest pachet.
+
