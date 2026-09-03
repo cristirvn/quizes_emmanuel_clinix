@@ -6,8 +6,6 @@ Designul și textele au fost păstrate din proiectul sursă. Acest proiect este 
 
 Înainte de publicare, începe cu **GHID-SCURT-INTEGRARE-CHestionare.docx** (ghidul Word de două pagini), apoi citește [INTEGRATION.md](INTEGRATION.md) și [ROUTES.md](ROUTES.md) pentru detalii tehnice.
 
-Pentru a vedea traseele fără a porni proiectul, deschide `PREVIZUALIZARE_HTML/index.html` într-un browser. Cele 33 de pagini HTML sunt legate între ele: selector → test → rezultat → landing page.
-
 ## Pornire locală
 
 ```bash
